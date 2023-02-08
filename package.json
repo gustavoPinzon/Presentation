@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "reveal.js-menu": "^2.1.0",
+    "reveal.js-relativenumber": "^1.0.2",
+    "reveal.js-toolbar": "^0.2.1"
+  }
+}
