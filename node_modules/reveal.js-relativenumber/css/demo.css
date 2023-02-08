@@ -1,0 +1,176 @@
+.backgrounds {
+  background: #1a1626;
+}
+
+.slides {
+  opacity: 0;
+  -webkit-transition: opacity 0.5s ease;
+  -o-transition: opacity 0.5s ease;
+  transition: opacity 0.5s ease;
+}
+
+.reveal.ready .slides {
+  opacity: 1;
+}
+
+.p-0 {
+  padding: 0 !important;
+}
+
+.menubar {
+  -webkit-transition: -webkit-transform 0.8s cubic-bezier(0.26, 0.86, 0.44, 0.985);
+  transition: -webkit-transform 0.8s cubic-bezier(0.26, 0.86, 0.44, 0.985);
+  -o-transition: transform 0.8s cubic-bezier(0.26, 0.86, 0.44, 0.985);
+  transition: transform 0.8s cubic-bezier(0.26, 0.86, 0.44, 0.985);
+  transition: transform 0.8s cubic-bezier(0.26, 0.86, 0.44, 0.985), -webkit-transform 0.8s cubic-bezier(0.26, 0.86, 0.44, 0.985);
+  -webkit-transform: translateY(-100%);
+      -ms-transform: translateY(-100%);
+          transform: translateY(-100%);
+  z-index: 1;
+  padding: 0.3em;
+  position: absolute;
+  top: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  font-size: 1rem;
+  font-size: 2.7vmin;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+.reveal.ready:not(.hide-menubar) .menubar {
+  -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+          transform: translateY(0);
+}
+.menubar > * {
+  padding: 0.4em 0.6em;
+}
+.menubar > *:first-child, .menubar > *:last-child {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+.menubar > *:first-child {
+  margin-right: auto;
+}
+.menubar > *:last-child {
+  margin-left: auto;
+}
+.menubar > *:first-child:last-child {
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+}
+.menubar > *:first-child:last-child.left {
+  margin-left: 0;
+}
+.menubar > *:first-child:last-child.right {
+  margin-right: 0;
+}
+.menubar a {
+  color: inherit;
+  opacity: 0.5;
+}
+.menubar a:hover {
+  color: inherit;
+  opacity: 0.75;
+}
+.menubar > ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style-type: none;
+  padding: 0;
+  margin: 0 auto;
+}
+.menubar > ul li {
+  padding: 0.4em 1em;
+  text-align: center;
+}
+.menubar > ul li.active a {
+  opacity: 1;
+  -webkit-font-smoothing: subpixel-antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.menubar .slide-number {
+  display: block !important;
+  background: none;
+  position: relative;
+  font-family: inherit;
+  font-size: inherit;
+  right: auto;
+  bottom: auto;
+  text-align: left;
+  padding: 0.4em 0 0.4em 0.4em;
+}
+
+.menubar > *:first-child, .menubar > *:last-child {
+  -ms-flex-preferred-size: 10vmin;
+      flex-basis: 10vmin;
+}
+
+html.print-pdf .reveal .slide-number-pdf {
+  display: none;
+}
+
+.small {
+  font-size: 0.7em;
+}
+
+.smallitalic {
+  font-size: 0.7em;
+  font-style: italic;
+}
+
+.reveal pre {
+  width: 100%;
+  margin: 0 auto;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background: rgba(180, 180, 180, 0.5);
+}
+
+p code, p kbd, ul code {
+  background: rgba(180, 180, 180, 0.2);
+  font-size: 0.8em;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+p kbd, ul kbd {
+  font-family: monospace;
+}
+
+section ul li + li {
+  margin-top: 1rem;
+}
+
+a.github-corner {
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  width: clamp(50px, 8vmax, 80px);
+  line-height: 0;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+a.github-corner:hover {
+  color: white;
+}
